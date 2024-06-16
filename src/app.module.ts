@@ -1,6 +1,6 @@
 import { MiddlewareConsumer, Module, NestModule, ValidationPipe } from '@nestjs/common';
-import { CatsController } from './cats/cats.controller';
-import { CatsModule } from './cats/cats.module';
+import { CatsController } from './models/cats/cats.controller';
+import { CatsModule } from './models/cats/cats.module';
 import { logger } from './common/middleware/logger.middleware';
 import { APP_GUARD, APP_INTERCEPTOR, APP_PIPE } from '@nestjs/core';
 import { RolesGuard } from './common/guards/roles.guard';
